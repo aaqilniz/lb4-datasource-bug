@@ -11,7 +11,7 @@ const config = {
   c: '{"name":"localmodels","connector":"mysql","url":"","host":"localhost","port":"3306","user":"root","password":"asdf","database":"quiz"}',
   y: true,
   initialGenerator: true,
-  env: {
+  env: { /*This env variable is causing circular string parsing error */
     _events: {
       end: [
         function () { [native code] },
